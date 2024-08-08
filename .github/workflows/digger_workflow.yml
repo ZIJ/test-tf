@@ -32,6 +32,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.DIGGER_AWS_SECRET_ACCESS_KEY }}
           setup-terraform: true
           terraform-version: 'v1.5.5'
+          disable-locking: true
           #digger-private-key: '${{ secrests.DIGGER_PRIVATE_KEY}}'
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
